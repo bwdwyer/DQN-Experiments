@@ -10,6 +10,7 @@ RUN pip install tf-agents
 RUN pip install pyglet
 
 RUN pip install memory-profiler
+RUN pip install pandas
 
 #ENTRYPOINT jupyter lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 ENTRYPOINT ["jupyter", "lab", "--ip", "0.0.0.0", "--port", "8888", "--no-browser", "--allow-root", "--NotebookApp.extensions='memory_profiler.memusage'"]
